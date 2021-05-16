@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &282797511860035367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4930501279847729229}
+  - component: {fileID: 3279421505709499333}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4930501279847729229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282797511860035367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3279421505709499333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282797511860035367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34096ddb028142647a2042a33579717f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: MainTheme
+    clip: {fileID: 8300000, guid: eb139a67988200c4d98fc6ecd4ff4af2, type: 3}
+    volume: 0.2
+    loop: 1
+    source: {fileID: 0}
+  - name: pickupcoins
+    clip: {fileID: 8300000, guid: ebcf68b9b3798c74ba29d3d30382ea70, type: 3}
+    volume: 0.3
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: d54ff78c294960143907d85adbd4e091, type: 3}
+    volume: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: d14f084b17ec6b54da41c58374deb08b, type: 3}
+    volume: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 817ee9680ec2ddc4788116be2499aa04, type: 3}
+    volume: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Break
+    clip: {fileID: 8300000, guid: 780b5fec6ccf00c49919c20f4d03f131, type: 3}
+    volume: 18
+    loop: 0
+    source: {fileID: 0}
+  - name: Collide
+    clip: {fileID: 8300000, guid: c5f6510b01b32904dbda25a1cd261018, type: 3}
+    volume: 24
+    loop: 0
+    source: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: dcaf6e07b2528114aa6aa725c4f15d32, type: 3}
+    volume: 1
+    loop: 1
+    source: {fileID: 0}
