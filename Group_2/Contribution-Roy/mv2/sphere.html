@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" defer></script>
+</head>
+<body>
+
+  <div class="card">
+    <model-viewer id="sphere" 
+                camera-controls 
+                interaction-prompt="none" 
+                shadow-intensity="0" 
+                shadow-softness="0"
+                environment-image="green_park.hdr"
+                src="reflective-sphere.gltf" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                alt="3D model of a sphere">
+
+      <div class="controls">
+        <div>
+          <p>Metalness: <span id="metalness-value"></span></p>
+          <input id="metalness" type="range" min="0" max="1" step="0.01" value="1">
+        </div>
+        <div>
+          <p>Roughness: <span id="roughness-value"></span></p>
+          <input id="roughness" type="range" min="0" max="1" step="0.01" value="0">
+        </div>
+      </div>
+
+    </model-viewer>
+
+  </div>
+
+
+  <script>
+
+    const oscillate = function(min, max, period, time) {
+        const mag = max - min;
+        return Math.cos(Math.PI + 2 * Math.PI * time / period) * (min + mag / 2.0) + mag / 2.0;
+      };
+
+    const modelViewerParameters = document.getElementById("sphere");
+
+    ( () => {
+        const time = performance.now();    
+        const animate = (now) => {
+          modelViewerParameters.shadowIntensity = oscillate(0, 5, 4000, now - time);
+          requestAnimationFrame(animate);
+        };
+      
+        animate();
+      }
+    )();
+    
+    modelViewerParameters.addEventListener("load", (ev) => {
+    
+      let material = modelViewerParameters.model.materials[0];
+    
+      let metalnessDisplay = document.querySelector("#metalness-value");
+      let roughnessDisplay = document.querySelector("#roughness-value");
+    
+      metalnessDisplay.textContent = material.pbrMetallicRoughness.metallicFactor;
+      roughnessDisplay.textContent = material.pbrMetallicRoughness.roughnessFactor;
+    
+      // Defaults to gold
+      material.pbrMetallicRoughness.setBaseColorFactor([0.7294, 0.5333, 0.0392]);
+    
+      document.querySelector('#metalness').addEventListener('input', (event) => {
+        material.pbrMetallicRoughness.setMetallicFactor(event.target.value);
+        metalnessDisplay.textContent = event.target.value;
+      });
+      
+      document.querySelector('#roughness').addEventListener('input', (event) => {
+        material.pbrMetallicRoughness.setRoughnessFactor(event.target.value);
+        roughnessDisplay.textContent = event.target.value;
+      });
+    })
+  </script>
+  
+</body>
+
+</html>
