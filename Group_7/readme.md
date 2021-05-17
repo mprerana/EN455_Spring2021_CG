@@ -27,16 +27,16 @@ The project is titled as - `A VR NIGHT`, means a virtual, grand-n-scary DJ party
 ## Quick glance of the party-
 
     1. Haunted House
-![Haunted House](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/home_gif.gif?raw=true)
+![Haunted House](./gifs/home_gif.gif?raw=true)
 
     2. DJ Party
-![DJ Party](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/dj_gif.gif?raw=true)
+![DJ Party](./gifs/dj_gif.gif?raw=true)
 
     3. Dining Room
-![Dining Room](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/dining_gif.gif?raw=true)
+![Dining Room](./gifs/dining_gif.gif?raw=true)
 
     4. Bar
-![Bar](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/bar_gif.gif?raw=true)
+![Bar](./gifs/bar_gif.gif?raw=true)
 
     5. Gaming Zone
-![Gaming Zone](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/game_gif.gif?raw=true)
+![Gaming Zone](./gifs/game_gif.gif?raw=true)
