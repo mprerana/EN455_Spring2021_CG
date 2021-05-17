@@ -14,8 +14,9 @@ The project is titled as - `A VR NIGHT`, means a virtual, grand-n-scary DJ party
 3. VR Device/Handheld Device such as Google Cardboard
 4. Minimum 8 GB RAM and quad-core CPU and dedicated GPU to get a smooth experience.
 
-**To view the VR DJ Night party**
-- Clone the [repo](repo-URL) , and setup a local server to view the code on the web browser.
+**To view the VR Night party**
+- Clone the [repo](https://github.com/ritikajha/EN455_Spring2021_CG.git) , and setup a local server to view the code on the web browser.
+- Download the assets  [here](https://drive.google.com/drive/folders/1u-kqBA_mqpdiHVs0OY2OEbj0UOOkfpuj?usp=sharing) and put the asset in their respective folders.
 - For XAMPP - put the cloned repo in the 'htdocs' directory and use it.
 - On Visual Studio Code - download the `Live Server` extension by Ritwick Day. Open the workspace in the cloned folder and open the ... in code editor tab. Press `Go Live` to start the live server.
 
@@ -33,7 +34,7 @@ The project is titled as - `A VR NIGHT`, means a virtual, grand-n-scary DJ party
 ![DJ Party](./gifs/dj_gif.gif?raw=true)
 
     3. Dining Room
-![Dining Room](./gifs/dining_gif.gif?raw=true)
+<img src="./gifs/dining_gif.gif" width="600"/>
 
     4. Bar
 ![Bar](./gifs/bar_gif.gif?raw=true)
