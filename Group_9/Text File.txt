@@ -1,0 +1,35 @@
+Project Name
+
+Virtual Tour of JNU using Minecraft
+
+Minecraft Server Name : JNU.SE.aternos
+
+Group Details
+
+
+Aditya Singla
+14008549
+aditya25_soe@jnu.ac.in
+CSE
+
+Abhishek Gautam
+14019136
+abhish32_soe@jnu.ac.in
+CSE
+
+Mansi Maholia
+68700348
+mansi18_soe@jnu.ac.in
+CSE
+
+Ritik Sharma
+27204350
+ritik40_soe@jnu.ac.in
+CSE
+
+Pinaki Das
+28714588
+pinaki61_soe@jnu.ac.in
+CSE
+
+
