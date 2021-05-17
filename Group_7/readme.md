@@ -1,11 +1,10 @@
-
 # Computer Graphics Project submitted by - Group 7
 Members are - 
->   Akanksha Marskole
->   Daneshwari Kankanwadi
->   Kushal Poddar
->   Ritika Jha
->   Rohan Kumar
+1. Akanksha Marskole
+2.  Daneshwari Kankanwadi
+3. Kushal Poddar
+4. Ritika Jha
+5. Rohan Kumar
 
 The project is titled as - `A VR NIGHT`, means a virtual, grand-n-scary DJ party that comes along with a DJ Room, Bar Room, Dining Room, Gaming Zone that makes you feel thrilled and happy.
 
@@ -27,17 +26,17 @@ The project is titled as - `A VR NIGHT`, means a virtual, grand-n-scary DJ party
 
 ## Quick glance of the party-
 
-    1. use :
-<img src="https://github.com/dk-github-acc/repo-name/blob/main/img.png" width="100" height="100">
- OR
-![Index-page](<image/gif url> "gif/image of Index-page")
-![DJ-room](<image url> "GIF/image of DJ-room")
-![Bar](<image url> "GIF/image of Bar")
-![Dining-room](<image url> "GIF/image of dining room")
-![Game-zone](<image url> "GIF/image of game-zone")
+    1. Haunted House
+![Haunted House](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/home_gif.gif?raw=true)
 
-    2. for gifs -
-![Index-page](<gif url ending with .gif> "gif of Index-page")
+    2. DJ Party
+![DJ Party](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/dj_gif.gif?raw=true)
 
-    3. for links -
-[text](https://media.giphy.com/media/AiF8ZsTESrDwRjEcIU/giphy.gif)
+    3. Dining Room
+![Dining Room](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/dining_gif.gif?raw=true)
+
+    4. Bar
+![Bar](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/bar_gif.gif?raw=true)
+
+    5. Gaming Zone
+![Gaming Zone](https://github.com/ritikajha/EN455_Spring2021_CG/tree/main/Group_7/gifs/game_gif.gif?raw=true)
