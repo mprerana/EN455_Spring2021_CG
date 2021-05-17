@@ -36,10 +36,10 @@ var options = {
 	bloomStrength: 0.6,
 	bloomThreshold: 0,
 	bloomRadius: 1.0,
-	color0: [250, 200, 0],
-	color1: [255, 100, 50],
+	color0: [220, 100, 220],
+	color1: [220, 50, 220],
 	color2: [255, 100, 200],
-	isanimate: false,
+	isanimate: true,
 };
 
 var gui = new dat.GUI();
@@ -327,7 +327,7 @@ function init() {
 	// scene.background = new THREE.Color( 0xffffff,2);
 
 	sceneRTT = new THREE.Scene();
-	renderer = new THREE.WebGLRenderer({ antialias: true, autoSize: true,});
+	renderer = new THREE.WebGLRenderer({ antialias: true,});
 	// renderer.setClearColor(0x000000,1);
 	renderer.setPixelRatio(2);
 	renderer.setSize(window.innerWidth/2, window.innerHeight);
@@ -551,10 +551,7 @@ function animate(deltaTime) {
 function handleResize() {
 	camera.aspect = window.innerWidth/2 / window.innerHeight;
 	camera.updateProjectionMatrix();
-	frontcard.material.uniforms.resolution.value = new THREE.Vector2(
-		window.innerWidth/2,
-		window.innerHeight
-		);
+	frontcard.material.uniforms.resolution.value = new THREE.Vector2(window.innerWidth/2, window.innerHeight );
 	skullmaterial.uniforms.resolution.value = new THREE.Vector2(
 		1301,
 		window.innerHeight

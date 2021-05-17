@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>&lt;model-viewer&gt; example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" defer></script>
+  </head>
+
+  <body>
+    <H1>BY SAYANTAN ROY</H1>
+    <div class="all">
+      <div id="card">
+        <model-viewer src="3d/astronaut.glb" alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
+        <section class="attribution">
+          <span>
+            <h1>Astronaut</h1>
+          </span>
+        </section>
+      </div>
+      <div id="card">
+        <!-- All you need to put beautiful, interactive 3D content on your site: -->
+        <model-viewer src="3d/odd-shape-labeled.glb" alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
+        <section class="attribution">
+          <span>
+            <h1>Perspective Model</h1>
+          </span>
+        </section>
+      </div>
+      <div id="card">
+        <model-viewer src="3d/gundam.glb" alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
+        <section class="attribution">
+          <span>
+            <h1>Gundam</h1>
+          </span>
+        </section>
+      </div>
+      <div id="card">
+        <model-viewer camera-controls autoplay ar auto-rotate src="3d/Horse.glb" alt="A 3D model of Horse" shadow-intensity="1">
+        </model-viewer>
+        <section class="attribution">
+          <span>
+            <h1>Horse</h1>
+          </span>
+        </section>
+      </div>
+    </div>
+  </body>
+
+</html>
