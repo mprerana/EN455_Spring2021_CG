@@ -15,7 +15,8 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudiioManager>().PauseSound("MainTheme");
+        //FindObjectOfType<AudiioManager>().PauseSound("MainTheme");
+        FindObjectOfType<AudiioManager>().PauseSound("GameOver");
         FindObjectOfType<AudiioManager>().PlaySound("Menu");
         Time.timeScale = 1;
     }    

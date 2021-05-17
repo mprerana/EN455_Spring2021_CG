@@ -21,6 +21,7 @@ public class Coin : MonoBehaviour
         if(other.tag == "Player")
         {
             PlayerPrefs.SetInt("TotalCoins", PlayerPrefs.GetInt("TotalCoins", 0) + 1);
+            //PlayerPrefs.DeleteKey("TotalCoins");
             FindObjectOfType<AudiioManager>().PlaySound("pickupcoins");
             PlayerManager.numberOfCoins += 1;
             //Debug.Log("Coins: " + PlayerManager.numberOfCoins);

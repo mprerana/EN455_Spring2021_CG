@@ -70,4 +70,8 @@ public class Events : MonoBehaviour
             FindObjectOfType<AudiioManager>().PlaySound("MainTheme");
         }
     }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Level");
+    }
 }

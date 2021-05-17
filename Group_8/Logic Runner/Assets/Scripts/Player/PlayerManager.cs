@@ -25,6 +25,9 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<AudiioManager>().StopSound("GameOver");
+        FindObjectOfType<AudiioManager>().PauseSound("Menu");
+        FindObjectOfType<AudiioManager>().PlaySound("MainTheme");
         score = 0f;
         PointIncrePerSec = 3f;
         gameOver = isGameStarted = isGamePaused = false;
@@ -49,9 +52,10 @@ public class PlayerManager : MonoBehaviour
 
         if(gameOver)
         {   
+            
             animator.SetBool("IsGameOver", true);
             FindObjectOfType<AudiioManager>().PlaySound("Collide");
-            FindObjectOfType<AudiioManager>().PauseSound("MainTheme");
+            FindObjectOfType<AudiioManager>().StopSound("MainTheme");
             FindObjectOfType<AudiioManager>().PlaySound("GameOver");
             if ((int)score > PlayerPrefs.GetInt("HighScore", 0))
             {
